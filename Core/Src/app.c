@@ -18,7 +18,7 @@ void setDuty (uint8_t r, uint8_t g, uint8_t b){
 	//instance 실제 객체의 위치 (포인터 구조체)/ CCR1: 채널1의 Counter Compare Register /CNT: 카운터 그 자체
 	htim1.Instance->CCR1 = (r)*10;
 	htim1.Instance->CCR2 = (g)*10;
-	htim1.Instance->CCR3 = (b)*10;
+	htim1.Instance->CCR3 = (b)*20;
 
 }
 
